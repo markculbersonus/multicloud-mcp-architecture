@@ -1,0 +1,9 @@
+# Illustrative Codex MCP configuration; verify against your installed Codex version.
+# No credentials are embedded here.
+[mcp_servers.azure-mcp]
+command = "npx"
+args = ["-y", "@azure/mcp@latest", "server", "start"]
+
+# Remote AWS endpoint; authentication is handled separately.
+[mcp_servers.aws-mcp]
+url = "https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize"
